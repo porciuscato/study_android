@@ -2,6 +2,28 @@
 
 # Android
 
+## 2장 안드로이드 개발환경 설정
+
+### 휴대폰 개발자 옵션 켜기
+
+이 [링크](https://developer.android.com/studio/debug/dev-options?hl=ko)를 클릭해 개발옵션을 켜고, 
+
+### ADB(android debug bridge) 사용하기
+
+terminal에서 adb shell을 실행시키기 위해 adb.exe 파일이 있는 위치를 환경변수로 등록해야 한다. 
+
+[File] -> [New Project Settings] -> [Default Project Structure]로 들어가면 Android SDK location을 확인할 수 있다. adb shell은 platform-tools에 있으므로 경로에 platform-tools를 추가한 뒤 환경변수 path에 추가하자.
+
+이후 terminal 창에서 adb shell을 실행시킬 수 있다. 이때 기기를 연결하자. 실제 디바이스를 연결해도 되고, AVD를 켜도 된다. 주의할 점은 디바이스는 하나만 켜놔야 adb shell이 실행된다는 것이다.
+
+### logcat 사용하기
+
+로그캣은 디버깅을 위해 앱 실행 중 필요한 정보를 android monitor에 출력하는 것이다. 소스 코드에 함수를 직접 입력해 로그를 띄운다.
+
+앱을 실행시킨 뒤 안드로이드 스튜디오 하단 logcat을 통해 확인할 수 있다. 
+
+로그캣 함수를 너무 많이 사용하면 성능에 영향을 줄 수 있기에 필요한 곳을 적절히 선별하자.
+
 
 
 # God of Android
@@ -31,3 +53,8 @@
 5. 안드로이드가 자바를 사용하는 이유는?
 
    메모리 관리의 문제를 VM이 해결해줌으로써 개발자는 기능 개발에 집중할 수 있기 때문이다.
+
+## 2장 안드로이드 개발 환경 설정
+
+### 정리 문제
+
